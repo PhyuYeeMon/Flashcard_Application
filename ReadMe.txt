@@ -2,6 +2,8 @@
 
 - Flash Application is written by front side is boostrap 5,Html,CSS,JavaScript, back side is php version 7 and Mysql database is used.
 
+- Change database username and password in config of project.
+
 - Firstly, you have to register in Flashcard Application.Email is checked for duplicated so that you don't use the same email.
 
 - Secondly, you can login into Flashcard Applicaion when you have already account.

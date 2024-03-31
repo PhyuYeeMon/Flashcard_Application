@@ -119,11 +119,11 @@
 			      	<div class="modal-body">
 			      		<input type="hidden" name="update_id" id="update_id">
 				       	<div class="form-group mb-3">
-				       		<label for="">Question</label>
+				       		<label for="">Question For Front Side</label>
 				       		<input type="text" name="question" id="question" class="form-control" placeholder="Enter Question">
 				       	</div>
 				       	<div class="form-group mb-3">
-				       		<label for="">Answer</label>
+				       		<label for="">Answer For Back Side</label>
 				       		<input type="text" name="answer" id="answer" class="form-control" placeholder="Enter Answer">
 				       	</div>
 				       	<div class="form-group mb-3">

@@ -1,0 +1,137 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+nav
+{
+	position: fixed;
+	background-color: skyblue;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo
+{
+	font-size: 25px;
+	position: relative;;
+	left: 5%;
+	color: white;
+	font-weight: bold;
+	line-height: 70px;
+}
+
+ul
+{
+	position: relative;;
+	float: right;
+	margin-right: 20px;
+}
+
+ul li
+{
+	display: inline-block;
+	line-height: 70px;
+	margin: 0 5px;
+}
+
+ul li a 
+{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+aside ul
+{
+	background-color: #424a5b;
+	width: 16%;
+	height:100%;
+	position: fixed;
+	padding-top: 10%;
+	text-align: center;
+}
+
+aside ul li
+{
+	list-style:none;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+aside ul li a
+{
+	color:white;
+	font-weight:bold;
+	text-decoration: none;
+	border:none;
+}
+
+aside ul li a:hover
+{
+	color:skyblue;
+	text-decoration: none;
+}
+
+.content
+{
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.content1
+{
+	margin-left: 18%;
+}
+
+h1
+{
+	padding-top: 80px;
+}
+
+.page-info
+{
+	margin-top:10px;
+	font-size:18px;
+}
+
+.pagination
+{
+	margin-top:5px;
+}
+
+.page-numbers{
+	display: inline-block;
+}
+
+.pagi
+{
+   
+   position: relative;;
+   float: right;
+   margin-right: 20px;
+   
+}
+
+.pagi .pagination a{
+	display: inline-block;
+	text-decoration: none;
+	
+	padding: 5px 10px;
+	border:thin solid #555;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

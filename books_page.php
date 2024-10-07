@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<link href="css/flash_card_qa.css" rel="stylesheet" type="text/css">
+	<link href="css/books_page.css" rel="stylesheet" type="text/css">
 
 </head>
 <body onload="move('element')">
@@ -55,28 +55,32 @@
 	</aside>
 
 	<div class="content1">
-		<h1>Flash Card Q&A</h1>
-		<main class="main-result wrapper" aria-label="flash card container">
-			<?php
-				$card =null;
-				foreach ($result as $value) 
-				{
-					$question = $value['question'];
-					$answer = $value['answer'];
-					$card.="<div class='card' tabIndex='0'>
-								<div class='card-front'>
-									{$question}
-								</div>
-								<div class='card-back'>
-									{$answer}
-								</div>
-							</div>";
-				}
-				echo $card;
-			?>
-		</main>
+	    <h1>Books List</h1>
+	    <?php
+	        if($result)
+	        {
+	            foreach ($result as $value) 
+	            {
+	            ?>
+	                <div class="row book-row">
+	                    <div class="col-md-12 book-item">
+	                        <img src="images/<?php echo $value['image_path'] ?>" width="100" height="100" alt="Books Image">
+	                        <div class="book-details">
+	                            <h6 class="title"><?php echo $value['question'] ?></h6>
+	                            <h6 class="title"><?php echo $value['answer'] ?></h6>
+	                            <p class="book_description">
+	                                <?php echo $value['description'] ?>
+	                            </p>
+	                        </div>
+	                    </div>
+	                </div>
+	            <?php
+	            }
+	        }
+	    ?>
 	</div>
-	
+
+
 </body>
 </html>
 	

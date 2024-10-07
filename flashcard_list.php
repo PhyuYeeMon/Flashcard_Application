@@ -63,7 +63,7 @@
 				<a href="flashcard_list.php">Flash Card List</a>
 			</li>
 			<li>
-				<a href="flash_card_qa.php">Flash Card View</a>
+				<a href="books_page.php">Flash Card View</a>
 			</li>
 		</ul>
 	</aside>
